@@ -1,0 +1,8 @@
+{
+  "model": "patchcore",
+  "exp1_auroc": 0.7156804733727811,
+  "exp2_auroc": 0.5587204034590777,
+  "domain_gap": 0.15696006991370337,
+  "preprocess": "basic",
+  "phase": "phase1"
+}

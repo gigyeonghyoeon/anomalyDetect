@@ -1,0 +1,24 @@
+# Phase 1-2 default hyperparameters
+autoencoder:
+  latent_dim: 128
+  batch_size: 32
+  lr: 0.001
+  epochs: 50
+  early_stop_patience: 10
+
+unet_ae:
+  latent_dim: 128
+  batch_size: 32
+  lr: 0.001
+  epochs: 50
+  early_stop_patience: 10
+
+patchcore:
+  coreset_ratio: 0.1
+  k_neighbors: 9
+  batch_size: 32
+  lr: 0.001
+  epochs: 50
+
+preprocess:
+  image_size: 224

@@ -1,0 +1,16 @@
+project:
+  device: cpu
+
+autoencoder:
+  batch_size: 4
+  epochs: 2
+
+unet_ae:
+  batch_size: 4
+  epochs: 2
+
+patchcore:
+  batch_size: 4
+
+evaluation:
+  rsna_max_samples: 100

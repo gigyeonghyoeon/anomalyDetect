@@ -1,0 +1,8 @@
+{
+  "model": "patchcore",
+  "preprocess": "enhanced",
+  "exp1_auroc": 0.6631054131054132,
+  "exp2_auroc": 0.618836638191625,
+  "domain_gap": 0.04426877491378811,
+  "phase": "phase2"
+}

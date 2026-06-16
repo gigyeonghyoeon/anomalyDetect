@@ -1,0 +1,11 @@
+project:
+  device: cuda
+
+autoencoder:
+  batch_size: 32
+
+unet_ae:
+  batch_size: 32
+
+patchcore:
+  batch_size: 32

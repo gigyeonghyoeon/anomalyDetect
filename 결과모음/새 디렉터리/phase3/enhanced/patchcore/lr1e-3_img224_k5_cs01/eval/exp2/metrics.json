@@ -1,0 +1,13 @@
+{
+  "experiment": "exp2",
+  "model": "patchcore",
+  "preprocess": "enhanced",
+  "phase": "phase3",
+  "run_id": "lr1e-3_img224_k5_cs01",
+  "threshold": 5.209205150604248,
+  "accuracy": 0.5620971368610403,
+  "precision": 0.28874655544797795,
+  "recall": 0.6448769128409847,
+  "f1": 0.39888883173002726,
+  "auroc": 0.6243361043006865
+}

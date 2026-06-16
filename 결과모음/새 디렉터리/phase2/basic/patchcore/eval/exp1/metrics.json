@@ -1,0 +1,13 @@
+{
+  "experiment": "exp1",
+  "model": "patchcore",
+  "preprocess": "basic",
+  "phase": "phase2",
+  "run_id": "default",
+  "threshold": 5.086911678314209,
+  "accuracy": 0.592948717948718,
+  "precision": 0.7575757575757576,
+  "recall": 0.5128205128205128,
+  "f1": 0.6116207951070336,
+  "auroc": 0.7156804733727811
+}

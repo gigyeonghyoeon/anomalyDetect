@@ -1,0 +1,67 @@
+project:
+  seed: 42
+  device: cuda
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  metadata_csv: data/processed/metadata.csv
+  output_dir: outputs
+
+preprocess:
+  variant: basic  # basic | enhanced
+  image_size: 224
+  normalize_mean: 0.5
+  normalize_std: 0.5
+  clahe_clip_limit: 2.0
+  clahe_tile_size: 8
+  histogram_match: false
+  histogram_ref_path: data/processed/histogram_ref_rsna.npz
+
+split:
+  val_ratio: 0.15
+
+experiment:
+  phase: phase1
+  preprocess: basic
+  model: conv_ae
+  run_id: default
+
+autoencoder:
+  latent_dim: 128
+  batch_size: 32
+  lr: 0.001
+  epochs: 50
+  early_stop_patience: 10
+
+unet_ae:
+  latent_dim: 128
+  batch_size: 32
+  lr: 0.001
+  epochs: 50
+  early_stop_patience: 10
+
+patchcore:
+  backbone: resnet18
+  coreset_ratio: 0.1
+  k_neighbors: 9
+  coreset_method: greedy
+  coreset_max_candidates: 50000
+  batch_size: 32
+  memory_augment: false
+  train_sources: chest_xray
+  contrastive_pretrain: false
+  contrastive_epochs: 10
+  contrastive_lr: 0.0001
+  contrastive_temperature: 0.5
+  lr: 0.001
+  epochs: 50
+
+evaluation:
+  primary_experiment: exp2  # winner selection: exp1 (Chest X-ray) | exp2 (RSNA)
+  experiments:
+    - exp1
+    - exp2
+  threshold_percentile: 95
+  tta: false
+  rsna_max_samples: null  # null = full RSNA; set e.g. 5000 for faster screening

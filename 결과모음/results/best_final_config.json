@@ -1,0 +1,8 @@
+{
+  "model": "patchcore",
+  "preprocess": "enhanced",
+  "run_id": "lr1e-3_img256_k5_cs01",
+  "exp1_auroc": 0.6884724961648039,
+  "exp2_auroc": 0.6368267077815474,
+  "domain_gap": 0.05164578838325651
+}

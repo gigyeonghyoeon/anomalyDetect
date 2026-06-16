@@ -1,0 +1,36 @@
+# Phase 4 (incomplete / excluded from submission)
+outputs/phase4/
+configs/hp_grid_phase4/
+data/processed/phase4_manifest.csv
+scripts/generate_phase4_configs.py
+scripts/run_phase4.py
+scripts/run_phase4_pipeline.py
+scripts/run_phase4_pipeline.sh
+scripts/run_phase4_background.sh
+scripts/select_best_phase4.py
+scripts/run_ensemble_eval.py
+
+# Raw datasets & local run outputs (results are in 결과모음/)
+data/raw/
+outputs/
+
+# Model checkpoints & caches
+*.pt
+*.pth
+*.ckpt
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Environment
+.venv/
+venv/
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,5 @@
+experiment:
+  phase: phase1
+  preprocess: basic
+  model: conv_ae
+  run_id: default

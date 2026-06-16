@@ -1,0 +1,9 @@
+{
+  "model": "patchcore",
+  "backbone": "resnet18",
+  "coreset_ratio": 0.1,
+  "k_neighbors": 5,
+  "batch_size": 32,
+  "lr": 0.001,
+  "epochs": 50
+}

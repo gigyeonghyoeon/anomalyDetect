@@ -1,0 +1,13 @@
+{
+  "experiment": "exp2",
+  "model": "conv_ae",
+  "preprocess": "basic",
+  "phase": "phase1",
+  "run_id": "default",
+  "threshold": 0.23665443062782288,
+  "accuracy": 0.7112501873782041,
+  "precision": 0.2133423636979343,
+  "recall": 0.10479041916167664,
+  "f1": 0.14054656999442275,
+  "auroc": 0.47831179906698473
+}

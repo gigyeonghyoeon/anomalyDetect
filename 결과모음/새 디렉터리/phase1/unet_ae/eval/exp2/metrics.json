@@ -1,0 +1,13 @@
+{
+  "experiment": "exp2",
+  "model": "unet_ae",
+  "preprocess": "basic",
+  "phase": "phase1",
+  "run_id": "default",
+  "threshold": 0.23023004829883575,
+  "accuracy": 0.7151851296657172,
+  "precision": 0.22061928219563687,
+  "recall": 0.10429141716566866,
+  "f1": 0.14163090128755365,
+  "auroc": 0.4896216500178178
+}
