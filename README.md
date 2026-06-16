@@ -93,6 +93,6 @@ src/train/        train_model.py, contrastive.py
 scripts/          Phase 1~4 파이프라인
 ```
 
-## 과제 보고서
+## 보고서
 
 Phase 1~3 실험 결과 및 분석은 [결과모음/과제보고서.md](결과모음/과제보고서.md)를 참고하세요.
